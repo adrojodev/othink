@@ -9,9 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-typed-hooks/use-key-press": "^1.0.5",
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.16.5",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-use-scroll-direction": "^0.1.0",
+    "use-sound": "^4.0.1"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./svg": "./dist/svg.js",
+    "./html": "./dist/html.js",
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "svg": [
+        "dist/svg.d.ts"
+      ],
+      "html": [
+        "dist/html.d.ts"
+      ]
+    }
   },
   "devDependencies": {
     "@types/node": "^20",
